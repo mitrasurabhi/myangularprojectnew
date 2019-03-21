@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-cookies.js"></script>
+    <script src="controller.js"></script>
+</head>
+<body ng-app="myApp">
+<h1>StopWatch</h1>
+    <div ng-controller="myController">
+        <label>Timer: {{timerWithInterval | hhmmss}} </label>
+        <button type="button" data-ng-click="startTimerWithInterval()">Start</button>
+         <button type="button" data-ng-click="resetTimerWithInterval()">Reset</button>
+        
+        
+    </div>
+    
+</body>
+</html>
